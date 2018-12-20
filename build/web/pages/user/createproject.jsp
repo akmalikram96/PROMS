@@ -16,7 +16,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>PROMS</title>
+        <title>Project Management System</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,7 +83,7 @@
                                             <em>Yesterday</em>
                                         </span>
                                     </div>
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                    <div>ss..</div>
                                 </a>
                             </li>
                             <li class="divider"></li>
