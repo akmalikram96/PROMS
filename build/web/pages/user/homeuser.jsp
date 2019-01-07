@@ -327,7 +327,6 @@
                                             <th>Project ID</th>
                                             <th>Start Date</th>
                                             <th>End Date</th>
-                                            <th>CSS grade</th>
                                             <th>Status</th>                                    </tr>
                                     </thead>
                                     <tbody>
@@ -336,7 +335,6 @@
                                             <td>1</td>
                                             <td>5/9/18</td>
                                             <td class="center">10/10/18</td>
-                                            <td class="center">X</td>
                                             <td>Completed</td>
                                         </tr>
                                         <tr class="even gradeC">
@@ -344,15 +342,13 @@
                                             <td>2</td>
                                             <td>10/10/18</td>
                                             <td class="center">15/1/19</td>
-                                            <td class="center">C</td>
                                             <td>Ongoing</td>
                                         </tr>
                                         <tr class="odd gradeA">
                                             <td>12/5/18</td>
                                             <td>3</td>
-                                            <td>Win 95+</td>
+                                            <td>1/1/2018</td>
                                             <td class="center">16/8/18</td>
-                                            <td class="center">A</td>
                                             <td>Overdue</td>
                                         </tr>
                                         <tr class="even gradeA">
@@ -360,7 +356,6 @@
                                             <td>4</td>
                                             <td>6/8/18</td>
                                             <td class="center">16/3/19</td>
-                                            <td class="center">A</td>
                                             <td>Completed</td>
                                         </tr>
                                         <tr class="odd gradeA">
@@ -368,39 +363,34 @@
                                             <td>5</td>
                                             <td>18/1/18</td>
                                             <td class="center">7/7/2018</td>
-                                            <td class="center">A</td>
                                             <td>Completed</td>
                                         </tr>
                                         <tr class="even gradeA">
                                             <td>Trident</td>
                                             <td>6</td>
                                             <td>18/1/18</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
+                                            <td class="center">16/8/18</td>
                                             <td>Completed</td>
                                         </tr>
                                         <tr class="gradeA">
                                             <td>Gecko</td>
                                             <td>7</td>
                                             <td>5/10/18</td>
-                                            <td class="center">1.7</td>
-                                            <td class="center">A</td>
+                                            <td class="center">16/8/18</td>
                                             <td>Ongoing</td>
                                         </tr>
                                         <tr class="gradeA">
                                             <td>Gecko</td>
                                             <td>8</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
+                                            <td>1/1/2018</td>
+                                            <td class="center">16/8/18</td>
                                             <td>Ongoing</td>
                                         </tr>
                                         <tr class="gradeA">
                                             <td>Gecko</td>
                                             <td>9</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                            <td class="center">A</td>
+                                            <td>1/1/2018</td>
+                                            <td class="center">16/8/18</td>
                                             <td>Ongoing</td>
                                         </tr>
                                     </tbody>

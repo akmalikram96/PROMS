@@ -201,15 +201,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
+                            
                             <li class="divider"></li>
                             <li>
                                 <a href="#">
@@ -228,15 +220,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
+                           
                             <li class="divider"></li>
                             <li>
                                 <a class="text-center" href="#">
