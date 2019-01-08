@@ -66,7 +66,7 @@
                                 <a href="homeuser.jsp" class="btn btn-lg btn-success btn-block">Login</a>
                                 <br>
                                 <p><a href="index.html">Forgot Password</a></p>
-                            </fieldset>
+                            </fieldset> 
                         </form>
                     </div>
                 </div>

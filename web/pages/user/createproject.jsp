@@ -282,17 +282,17 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                            <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
+                                <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
                             <li>
-                            <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Projects</a>
-                        </li>
-                       <li>
-                            <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
-                        </li>
-                        <li>
-                            <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
-                        </li>
+                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Projects</a>
+                            </li>
+                            <li>
+                                <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                            </li>
+                            <li>
+                                <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                            </li>
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>
@@ -331,39 +331,67 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div class="tab-pane fade in active" id="initiation">
-<!--                                            <br><form action="blank.jsp">-->
-                                                <div class="form-group">
-                                                    <label>Problem statement</label>
-                                                    <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
-                                                    <br>
-                                                    <label>Project Charter</label>
-                                                    <br>Please upload project charter.
-                                                    <input type="file">
-                                                    <br>
-                                                    <button type="submit" class="btn btn-default">Next</button>
-                                                    <button type="reset" class="btn btn-default">Reset</button>
-                                                </div>
+                                            <!--                                            <br><form action="blank.jsp">-->
+                                            <div class="form-group">
+                                                <label>Problem Title</label>
+                                                <textarea class="form-control" placeholder="Title" rows="3"></textarea>
+                                                <br>
+                                                <label>Problem Statement</label>
+                                                <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
+                                                <br>
+                                                <label>Team Member</label>
+                                                <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
+                                                <br>
+                                                <label>Project Charter</label>
+                                                <br>Please upload project charter.
+                                                <input type="file">
+                                                <br>
+                                                <button type="submit" class="btn btn-default">Next</button>
+                                                <button type="reset" class="btn btn-default">Reset</button>
+                                            </div>
                                             </form>
                                         </div>
+                                        
                                         <div class="tab-pane fade" id="detailplanning">
                                             <br><form action="blank.jsp" >
                                                 <div class="form-group">
-                                                    <label>Justification paper</label>
-                                                    <br>Please upload your justification paper.
-                                                    <input type="file">
-                                                    <br>
-                                                    <button type="submit" class="btn btn-default">Submit</button>
+                                                    <label><u>JUSTIFICATION AND BIDDING/CONTRACTING STRATEGY FORM</u> </label><br>
+                                                    <div class="panel"> <label>Please Select Mode of Purchase </label><br>
+                                                        <div class="panel-body">
+                                                            <input type="radio" name="purchasemode" value="quotation" required> Quotation &nbsp;&nbsp;
+                                                            <input type="radio" name="purchasemode" value="directquotation"> Quotation(Direct Negotiation) &nbsp;&nbsp;
+                                                            <input type="radio" name="purchasemode" value="tender"> Tender &nbsp;&nbsp;
+                                                            <input type="radio" name="purchasemode" value="directtender"> Tender(Direct Negotiation)
+                                                        </div>
+                                                    </div>
+
+                                                    <label>NO/REF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="referenceno"><br><br>
+                                                    <label>TITLE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="titleproject"><br><br>
+                                                    <label>JUSTIFICATION:</label><input type="text" name="referenceno"><br><br>
+                                                    <label>BUDGET:&nbsp;&nbsp;</label>
+                                                    <input type="radio" name="budget" value="yes" required>Yes &nbsp;
+                                                    <input type="radio" name="budget" value="no">No&nbsp;&nbsp;
+                                                    <label>COST CENTRE</label>
+                                                    <input type="text" name="cost">&nbsp;&nbsp;
+                                                    <label>FINANCIAL CODE</label>
+                                                    <input type="text" name="financialcode">&nbsp;&nbsp;<br><br>
+                                                    <label>Budget Balance</label>
+                                                    <input type="text" name="budgetbalance">&nbsp;&nbsp;
+                                                    <label>Estimate Cost</label>
+                                                    <input type="text" name="estimatecost">&nbsp;&nbsp;<br>
+                                                        <button type="submit" class="btn btn-default">Submit</button>
                                                     <button type="reset" class="btn btn-default">Reset</button>
                                                 </div>
                                             </form>
                                         </div>
+                                        
                                         <div class="tab-pane fade" id="tendering">
                                             <br>
                                             Initiation <p class="fa fa-check-circle-o"></p><br>
                                             Detail Planning <p class="fa fa-check-circle-o"></p><br>
                                             Submit to procurement<p class="fa fa-check-circle-o"></p><br>
-                                            
-                                            
+
+
                                         </div>
                                         <div class="tab-pane fade" id="bidding">
                                             <h4>Bidding</h4>
