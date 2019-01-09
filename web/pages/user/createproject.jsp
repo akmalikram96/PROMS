@@ -351,40 +351,84 @@
                                             </div>
                                             </form>
                                         </div>
-                                        
+
                                         <div class="tab-pane fade" id="detailplanning">
                                             <br><form action="blank.jsp" >
                                                 <div class="form-group">
                                                     <label><u>JUSTIFICATION AND BIDDING/CONTRACTING STRATEGY FORM</u> </label><br>
-                                                    <div class="panel"> <label>Please Select Mode of Purchase </label><br>
-                                                        <div class="panel-body">
-                                                            <input type="radio" name="purchasemode" value="quotation" required> Quotation &nbsp;&nbsp;
-                                                            <input type="radio" name="purchasemode" value="directquotation"> Quotation(Direct Negotiation) &nbsp;&nbsp;
-                                                            <input type="radio" name="purchasemode" value="tender"> Tender &nbsp;&nbsp;
-                                                            <input type="radio" name="purchasemode" value="directtender"> Tender(Direct Negotiation)
-                                                        </div>
-                                                    </div>
+                                                    <label>Please Select Mode of Purchase</label>
+                                                    <select class="form-control">
+                                                        <option>Quotation</option>
+                                                        <option>Quotation(Direct Negotiation)</option>
+                                                        <option>Tender</option>
+                                                        <option>Tender(Direct Negotiation)</option>
+                                                    </select><br>
 
-                                                    <label>NO/REF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="referenceno"><br><br>
-                                                    <label>TITLE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="titleproject"><br><br>
-                                                    <label>JUSTIFICATION:</label><input type="text" name="referenceno"><br><br>
-                                                    <label>BUDGET:&nbsp;&nbsp;</label>
-                                                    <input type="radio" name="budget" value="yes" required>Yes &nbsp;
-                                                    <input type="radio" name="budget" value="no">No&nbsp;&nbsp;
+                                                    <label>NO/REF</label>
+                                                    <input type="text" name="referenceno" class="form-control">
+                                                    <label>TITLE</label>
+                                                    <input type="text" name="projecttile" class="form-control">
+                                                    <label>JUSTIFICATION</label>
+                                                    <input type="text" name="justification" class="form-control">
+
+                                                    <label>BUDGET</label>
+                                                    <select class="form-control">
+                                                        <option>Yes</option>
+                                                        <option>No</option>
+                                                    </select><br>
+ 
                                                     <label>COST CENTRE</label>
-                                                    <input type="text" name="cost">&nbsp;&nbsp;
+                                                    <input type="text" name="costcentre" class="form-control">
                                                     <label>FINANCIAL CODE</label>
-                                                    <input type="text" name="financialcode">&nbsp;&nbsp;<br><br>
+                                                    <input type="text" name="financialcode" class="form-control"><br>
                                                     <label>Budget Balance</label>
-                                                    <input type="text" name="budgetbalance">&nbsp;&nbsp;
+                                                    <input type="text" name="budgetbalance" class="form-control">
                                                     <label>Estimate Cost</label>
-                                                    <input type="text" name="estimatecost">&nbsp;&nbsp;<br>
-                                                        <button type="submit" class="btn btn-default">Submit</button>
+                                                    <input type="text" name="estimatecost" class="form-control"> <br>
+                                                    
+                                                    <label>Please Select Type of Bidding/Contracting Mode</label>
+                                                    <select class="form-control">
+                                                        <option>Open</option>
+                                                        <option>Selective/Restrictive</option>
+                                                        <option>Direct Negotiation</option>
+                                                    </select><br>
+                                                    
+                                                    <label>Please Select Type of Contract</label>
+                                                    <select class="form-control">
+                                                        <option>Lump Sum</option>
+                                                        <option>Bill of Quantity</option>
+                                                    </select><br>
+                                                    <label>Please Select Duration of Contract</label>
+                                                    <select class="form-control">
+                                                        <option>One-off</option>
+                                                        <option>One-off with re-order option</option>
+                                                        <option>Periodic (Fixed Unit Price Agreement)</option>
+                                                        <option>Others:Please Specify</option>
+                                                    </select><br>
+                                                     <label>Please Select Quotation/Tender Schedule</label>
+                                                    <select class="form-control">
+                                                        <option>Urgent</option>
+                                                        <option>Normal Procedure</option>
+                                                    </select><br>
+                                                     <label>Please Select Evaluation Methodology</label>
+                                                    <select class="form-control">
+                                                        <option>Separate (Technical/Commercial)</option>
+                                                        <option>Combined (Techno-Comm) </option>
+                                                    </select><br>
+                                                    <label><b>Evaluation Criteria</b></label><br>
+                                                    <label>Technical Compliance</label>
+                                                    <input type="text" name="technicalcompliance" class="form-control"><br>
+                                                    <label>Technical Criteria(Please Specify)</label>
+                                                    <input type="text" name="technicriteria" class="form-control"><br>
+                                                    <label>Commercial Compliance</label>
+                                                    <input type="text" name="commercialcompliance" class="form-control"><br>
+                                                    
+                                                    <button type="submit" class="btn btn-default">Submit</button>
                                                     <button type="reset" class="btn btn-default">Reset</button>
                                                 </div>
                                             </form>
                                         </div>
-                                        
+
                                         <div class="tab-pane fade" id="tendering">
                                             <br>
                                             Initiation <p class="fa fa-check-circle-o"></p><br>

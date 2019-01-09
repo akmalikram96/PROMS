@@ -282,17 +282,17 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                            <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
+                                <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
                             <li>
-                            <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Projects</a>
-                        </li>
-                       <li>
-                            <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
-                        </li>
-                        <li>
-                            <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
-                        </li>
+                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Projects</a>
+                            </li>
+                            <li>
+                                <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                            </li>
+                            <li>
+                                <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                            </li>
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>
@@ -331,39 +331,111 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div class="tab-pane fade in active" id="initiation">
-<!--                                            <br><form action="blank.jsp">-->
-                                                <div class="form-group">
-                                                    <label>Problem statement</label>
-                                                    <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
-                                                    <br>
-                                                    <label>Project Charter</label>
-                                                    <br>Please upload project charter.
-                                                    <input type="file">
-                                                    <br>
-                                                    <button type="submit" class="btn btn-default">Next</button>
-                                                    <button type="reset" class="btn btn-default">Reset</button>
-                                                </div>
+                                            <!--                                            <br><form action="blank.jsp">-->
+                                            <div class="form-group">
+                                                <label>Problem Title</label>
+                                                <textarea class="form-control" placeholder="Title" rows="3"></textarea>
+                                                <br>
+                                                <label>Problem Statement</label>
+                                                <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
+                                                <br>
+                                                <label>Team Member</label>
+                                                <textarea class="form-control" placeholder="Write your problem statement here" rows="3"></textarea>
+                                                <br>
+                                                <label>Project Charter</label>
+                                                <br>Please upload project charter.
+                                                <input type="file">
+                                                <br>
+                                                <button type="submit" class="btn btn-default">Next</button>
+                                                <button type="reset" class="btn btn-default">Reset</button>
+                                            </div>
                                             </form>
                                         </div>
+
                                         <div class="tab-pane fade" id="detailplanning">
                                             <br><form action="blank.jsp" >
                                                 <div class="form-group">
-                                                    <label>Justification paper</label>
-                                                    <br>Please upload your justification paper.
-                                                    <input type="file">
-                                                    <br>
+                                                    <label><u>JUSTIFICATION AND BIDDING/CONTRACTING STRATEGY FORM</u> </label><br>
+                                                    <label>Please Select Mode of Purchase</label>
+                                                    <select class="form-control">
+                                                        <option>Quotation</option>
+                                                        <option>Quotation(Direct Negotiation)</option>
+                                                        <option>Tender</option>
+                                                        <option>Tender(Direct Negotiation)</option>
+                                                    </select><br>
+
+                                                    <label>NO/REF</label>
+                                                    <input type="text" name="referenceno" class="form-control">
+                                                    <label>TITLE</label>
+                                                    <input type="text" name="projecttile" class="form-control">
+                                                    <label>JUSTIFICATION</label>
+                                                    <input type="text" name="justification" class="form-control">
+
+                                                    <label>BUDGET</label>
+                                                    <select class="form-control">
+                                                        <option>Yes</option>
+                                                        <option>No</option>
+                                                    </select><br>
+ 
+                                                    <label>COST CENTRE</label>
+                                                    <input type="text" name="costcentre" class="form-control">
+                                                    <label>FINANCIAL CODE</label>
+                                                    <input type="text" name="financialcode" class="form-control"><br>
+                                                    <label>Budget Balance</label>
+                                                    <input type="text" name="budgetbalance" class="form-control">
+                                                    <label>Estimate Cost</label>
+                                                    <input type="text" name="estimatecost" class="form-control"> <br>
+                                                    
+                                                    <label>Please Select Type of Bidding/Contracting Mode</label>
+                                                    <select class="form-control">
+                                                        <option>Open</option>
+                                                        <option>Selective/Restrictive</option>
+                                                        <option>Direct Negotiation</option>
+                                                    </select><br>
+                                                    
+                                                    <label>Please Select Type of Contract</label>
+                                                    <select class="form-control">
+                                                        <option>Lump Sum</option>
+                                                        <option>Bill of Quantity</option>
+                                                    </select><br>
+                                                    <label>Please Select Duration of Contract</label>
+                                                    <select class="form-control">
+                                                        <option>One-off</option>
+                                                        <option>One-off with re-order option</option>
+                                                        <option>Periodic (Fixed Unit Price Agreement)</option>
+                                                        <option>Others:Please Specify</option>
+                                                    </select><br>
+                                                     <label>Please Select Quotation/Tender Schedule</label>
+                                                    <select class="form-control">
+                                                        <option>Urgent</option>
+                                                        <option>Normal Procedure</option>
+                                                    </select><br>
+                                                     <label>Please Select Evaluation Methodology</label>
+                                                    <select class="form-control">
+                                                        <option>Separate (Technical/Commercial)</option>
+                                                        <option>Combined (Techno-Comm) </option>
+                                                    </select><br>
+                                                    <label><b>Evaluation Criteria</b></label><br>
+                                                    <label>Technical Compliance</label>
+                                                    <input type="text" name="technicalcompliance" class="form-control"><br>
+                                                    <label>Technical Criteria(Please Specify)</label>
+                                                    <input type="text" name="technicriteria" class="form-control"><br>
+                                                    <label>Commercial Compliance</label>
+                                                    <input type="text" name="commercialcompliance" class="form-control"><br>
+                                                    
                                                     <button type="submit" class="btn btn-default">Submit</button>
                                                     <button type="reset" class="btn btn-default">Reset</button>
                                                 </div>
                                             </form>
                                         </div>
+
                                         <div class="tab-pane fade" id="tendering">
                                             <br>
                                             Initiation <p class="fa fa-check-circle-o"></p><br>
                                             Detail Planning <p class="fa fa-check-circle-o"></p><br>
                                             Submit to procurement<p class="fa fa-check-circle-o"></p><br>
-                                            
-                                            
+
+
                                         </div>
                                         <div class="tab-pane fade" id="bidding">
                                             <h4>Bidding</h4>
