@@ -353,76 +353,171 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="detailplanning">
-                                            <br><form action="blank.jsp" >
+                                            <br><form action="tenderlist.jsp" >
                                                 <div class="form-group">
-                                                    <label><u>JUSTIFICATION AND BIDDING/CONTRACTING STRATEGY FORM</u> </label><br>
-                                                    <label>Please Select Mode of Purchase</label>
-                                                    <select class="form-control">
-                                                        <option>Quotation</option>
-                                                        <option>Quotation(Direct Negotiation)</option>
-                                                        <option>Tender</option>
-                                                        <option>Tender(Direct Negotiation)</option>
-                                                    </select><br>
+                                                    <label><u>JUSTIFICATION AND BIDDING/CONTRACTING STRATEGY FORM</u> </label><br>  
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Mode of Purchase</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>Quotation</option>
+                                                                <option>Quotation(Direct Negotiation)</option>
+                                                                <option>Tender</option>
+                                                                <option>Tender(Direct Negotiation)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-row">
+                                                        <label class="col-sm-2 col-form-label">NO/REF</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="referenceno" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-row">
+                                                        <label class="col-sm-2 col-form-label">TITLE</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" name="projecttile" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-row">
+                                                        <label class="col-md-2 col-form-label">JUSTIFICATION</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" name="justification" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-4">
+                                                            <label>BUDGET</label>
+                                                            <select class="form-control">
+                                                                <option>Yes</option>
+                                                                <option>No</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-4">
+                                                            <label>COST CENTRE</label>
+                                                            <input type="text" name="costcentre" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-4">
+                                                            <label>FINANCIAL CODE</label>
+                                                            <input type="text" name="financialcode" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Budget Balance</label>
+                                                            <input type="text" name="budgetbalance" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Estimate Cost</label>
+                                                            <input type="text" name="estimatecost" class="form-control"> <br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Type of Bidding/Contracting Mode</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>Open</option>
+                                                                <option>Selective/Restrictive</option>
+                                                                <option>Direct Negotiation</option>
+                                                            </select><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Type of Contract</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>Lump Sum</option>
+                                                                <option>Bill of Quantity</option>
+                                                            </select><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Duration of Contract</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>One-off</option>
+                                                                <option>One-off with re-order option</option>
+                                                                <option>Periodic (Fixed Unit Price Agreement)</option>
+                                                                <option>Others:Please Specify</option>
+                                                            </select><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Quotation/Tender Schedule</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>Urgent</option>
+                                                                <option>Normal Procedure</option>
+                                                            </select><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group col-md-12">
+                                                            <label>Please Select Evaluation Methodology</label>
+                                                            <select class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>Separate (Technical/Commercial)</option>
+                                                                <option>Combined (Techno-Comm) </option>
+                                                            </select><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <label><b>Evaluation Criteria</b></label><br>
+                                                        <div class="col-md-6">
+                                                            <label>Technical Compliance</label>
+                                                            <input type="text" name="technicalcompliance" class="form-control" placeholder="%">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Commercial Compliance</label>
+                                                            <input type="text" name="commercialcompliance" class="form-control" placeholder="%"><br>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <label>Technical Criteria(Please Specify)</label>
+                                                            <input type="text" name="technicriteria" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <label class="col-sm-2 col-form-label">1. Price Offer</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" name="priceoffer" class="form-control"><br>
+                                                        </div>
+                                                        <label class="col-sm-2 col-form-label">2. Delivery Period</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" name="deliveryperiod" class="form-control"><br>
+                                                        </div>
+                                                        <label class="col-sm-2 col-form-label">3. Warranty Period</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" name="warrantyperiod" class="form-control"><br>
+                                                        </div>
+                                                        <label class="col-sm-2 col-form-label">Others</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="text" name="priceoffer" class="form-control" placeholder="Please Specify"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div>
+                                                            <label>List of Bidder/Tenderers(Please Specify)</label>
+                                                            <input type="text" name="listbidder" class="form-control" placeholder="1,2,3,4"><br>
+                                                        </div>
+                                                    </div>
+                                                    <label>1. CIDB</label>
+                                                    <label>Grade:</label>
+                                                    <input type="text" name="gradecidb" class="form-control"><br>
+                                                    <label>Category Specialization</label>
+                                                    <input type="text" name="cidbcategory" class="form-control"><br>
+                                                    <label>2. MOF</label>
+                                                    <label>Code:</label>
+                                                    <input type="text" name="codemof" class="form-control"><br>
+                                                    <label>Description</label>
+                                                    <input type="text" name="decriptionmof" class="form-control"><br>
 
-                                                    <label>NO/REF</label>
-                                                    <input type="text" name="referenceno" class="form-control">
-                                                    <label>TITLE</label>
-                                                    <input type="text" name="projecttile" class="form-control">
-                                                    <label>JUSTIFICATION</label>
-                                                    <input type="text" name="justification" class="form-control">
-
-                                                    <label>BUDGET</label>
-                                                    <select class="form-control">
-                                                        <option>Yes</option>
-                                                        <option>No</option>
-                                                    </select><br>
- 
-                                                    <label>COST CENTRE</label>
-                                                    <input type="text" name="costcentre" class="form-control">
-                                                    <label>FINANCIAL CODE</label>
-                                                    <input type="text" name="financialcode" class="form-control"><br>
-                                                    <label>Budget Balance</label>
-                                                    <input type="text" name="budgetbalance" class="form-control">
-                                                    <label>Estimate Cost</label>
-                                                    <input type="text" name="estimatecost" class="form-control"> <br>
-                                                    
-                                                    <label>Please Select Type of Bidding/Contracting Mode</label>
-                                                    <select class="form-control">
-                                                        <option>Open</option>
-                                                        <option>Selective/Restrictive</option>
-                                                        <option>Direct Negotiation</option>
-                                                    </select><br>
-                                                    
-                                                    <label>Please Select Type of Contract</label>
-                                                    <select class="form-control">
-                                                        <option>Lump Sum</option>
-                                                        <option>Bill of Quantity</option>
-                                                    </select><br>
-                                                    <label>Please Select Duration of Contract</label>
-                                                    <select class="form-control">
-                                                        <option>One-off</option>
-                                                        <option>One-off with re-order option</option>
-                                                        <option>Periodic (Fixed Unit Price Agreement)</option>
-                                                        <option>Others:Please Specify</option>
-                                                    </select><br>
-                                                     <label>Please Select Quotation/Tender Schedule</label>
-                                                    <select class="form-control">
-                                                        <option>Urgent</option>
-                                                        <option>Normal Procedure</option>
-                                                    </select><br>
-                                                     <label>Please Select Evaluation Methodology</label>
-                                                    <select class="form-control">
-                                                        <option>Separate (Technical/Commercial)</option>
-                                                        <option>Combined (Techno-Comm) </option>
-                                                    </select><br>
-                                                    <label><b>Evaluation Criteria</b></label><br>
-                                                    <label>Technical Compliance</label>
-                                                    <input type="text" name="technicalcompliance" class="form-control"><br>
-                                                    <label>Technical Criteria(Please Specify)</label>
-                                                    <input type="text" name="technicriteria" class="form-control"><br>
-                                                    <label>Commercial Compliance</label>
-                                                    <input type="text" name="commercialcompliance" class="form-control"><br>
-                                                    
+                                                    <label>OTHER NATURE OF REQUIREMENTS(Please specify):</label>
+                                                    <input type="text" name="codemof" class="form-control"><br>
                                                     <button type="submit" class="btn btn-default">Submit</button>
                                                     <button type="reset" class="btn btn-default">Reset</button>
                                                 </div>
