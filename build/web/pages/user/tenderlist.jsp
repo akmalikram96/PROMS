@@ -27,6 +27,12 @@
         <!--tab-->
         <!-- Custom CSS -->
         <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+        
+        <!-- DataTables CSS -->
+        <link href="../../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+        <!-- DataTables Responsive CSS -->
+        <link href="../../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -309,6 +315,70 @@
                         <!-- /.col-lg-12 -->
                     </div>
                     <!-- /.row -->
+                    <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Number</th>
+                                            <th>Vendor</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Quotation</th>                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td><a href="">Tender 1</a></td>
+                                            <td>Vendor A</td>
+                                            <td>5/9/18</td>
+                                            <td class="center">10/10/18</td>
+                                            <td>RM20000</td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>Tender 2</td>
+                                            <td>Vendor B</td>
+                                            <td>10/10/18</td>
+                                            <td class="center">15/1/19</td>
+                                            <td>RM25000</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>Tender 3</td>
+                                            <td>Vendor C</td>
+                                            <td>1/1/2018</td>
+                                            <td class="center">16/8/18</td>
+                                            <td>RM24000</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td>Tender 4</td>
+                                            <td>Vendor D</td>
+                                            <td>6/8/18</td>
+                                            <td class="center">16/3/19</td>
+                                            <td>RM40000</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td>Tender 5</td>
+                                            <td>Vendor E</td>
+                                            <td>18/1/18</td>
+                                            <td class="center">7/7/2018</td>
+                                            <td>RM15000</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                <!-- /.table-responsive -->
+
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
                     
                 </div>
                 <!-- /.container-fluid -->
@@ -325,6 +395,11 @@
         <!-- jQuery -->
         <script src="../../vendor/jquery/jquery.min.js"></script>
 
+        <!-- DataTables JavaScript -->
+        <script src="../../vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="../../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+        <script src="../../vendor/datatables-responsive/dataTables.responsive.js"></script>
+        
         <!-- Bootstrap Core JavaScript -->
         <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -333,6 +408,15 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="../../dist/js/sb-admin-2.js"></script>
+        
+        <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').DataTable({
+                    responsive: true
+                });
+            });
+        </script>
 
     </body>
 

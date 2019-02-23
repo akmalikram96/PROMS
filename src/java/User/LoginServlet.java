@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
     public void init() throws ServletException {
         String driver = "com.mysql.jdbc.Driver";
 
-        String dbName = "jpbicopy";
+        String dbName = "proms";
         String url = "jdbc:mysql://localhost/" + dbName + "?";
         String userName = "root";
         String password = "";

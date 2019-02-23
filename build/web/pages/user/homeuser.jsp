@@ -309,11 +309,11 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
-                <div class="row">
+<!--                <div class="row">
                     <div class="col-sm-2">
                         <button type="button" class="btn btn-default"><a href="createproject.jsp" class="center">Add new project</a></butto>
                     </div>
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
@@ -345,7 +345,7 @@
                                             <td>Ongoing</td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>12/5/18</td>
+                                            <td>Trident</td>
                                             <td>3</td>
                                             <td>1/1/2018</td>
                                             <td class="center">16/8/18</td>

@@ -505,17 +505,28 @@
                                                             <input type="text" name="listbidder" class="form-control" placeholder="1,2,3,4"><br>
                                                         </div>
                                                     </div>
-                                                    <label>1. CIDB</label>
-                                                    <label>Grade:</label>
-                                                    <input type="text" name="gradecidb" class="form-control"><br>
-                                                    <label>Category Specialization</label>
-                                                    <input type="text" name="cidbcategory" class="form-control"><br>
-                                                    <label>2. MOF</label>
-                                                    <label>Code:</label>
-                                                    <input type="text" name="codemof" class="form-control"><br>
-                                                    <label>Description</label>
-                                                    <input type="text" name="decriptionmof" class="form-control"><br>
-
+                                                    <div class="form-row">
+                                                        <label>1. CIDB</label><br>
+                                                        <div class="col-md-6">
+                                                            <label>Grade:</label>
+                                                            <input type="text" name="gradecidb" class="form-control"><br>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Category Specialization</label>
+                                                            <input type="text" name="cidbcategory" class="form-control"><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <label>2. MOF</label><br>
+                                                        <div class="col-md-6">
+                                                            <label>Code:</label>
+                                                            <input type="text" name="codemof" class="form-control"><br>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Description</label>
+                                                            <input type="text" name="decriptionmof" class="form-control"><br>
+                                                        </div>
+                                                    </div>
                                                     <label>OTHER NATURE OF REQUIREMENTS(Please specify):</label>
                                                     <input type="text" name="codemof" class="form-control"><br>
                                                     <button type="submit" class="btn btn-default">Submit</button>
