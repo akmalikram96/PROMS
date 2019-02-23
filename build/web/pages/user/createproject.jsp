@@ -285,14 +285,18 @@
                                 <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
                             <li>
-                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Projects</a>
+                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                                </li>
+                                <li>
+                                   <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                                </li>
+                            </ul>
+                                
                             </li>
-                            <li>
-                                <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
-                            </li>
-                            <li>
-                                <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
-                            </li>
+                        </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>

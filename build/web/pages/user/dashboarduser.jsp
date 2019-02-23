@@ -268,15 +268,19 @@
                             <li>
                             <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
-                            <li>
-                            <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects</a>
-                        </li>
                        <li>
-                            <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
-                        </li>
-                        <li>
-                            <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                                </li>
+                                <li>
+                                   <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                                </li>
+                            </ul>
+                                
                             </li>
+                        </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>
@@ -326,6 +330,28 @@
                                         <div class="col-xs-9 text-right">
                                             <div class="huge">1</div>
                                             <div>Ongoing!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-times fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">1</div>
+                                            <div>Overdue!</div>
                                         </div>
                                     </div>
                                 </div>
