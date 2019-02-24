@@ -268,6 +268,9 @@
                             <li>
                             <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
+                            <li>
+                                <a href="homeuser.jsp"><i class="fa fa-th-list fa-fw"></i>Project List</a>
+                            </li>
                        <li>
                                 <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
