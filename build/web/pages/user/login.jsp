@@ -42,6 +42,11 @@
 <body>
 
     <div class="container">
+        <div class ="row">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="../../images/LOGO_JPB_PNG.png" height="180" width="360" style="padding-top:50px;" alt="Johor Port Berhad">
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
