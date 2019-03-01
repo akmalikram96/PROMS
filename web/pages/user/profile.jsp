@@ -1,7 +1,7 @@
 <%-- 
-  Document   : HomeUser JSP
-  Created on : Nov 21, 2018, 10:45:10 AM
-  Author     : Akmal Ikram
+    Document   : blank
+    Created on : Nov 21, 2018, 10:45:10 AM
+    Author     : Akmal Ikram
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -16,7 +16,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>PROMS</title>
+        <title>Project Management System</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,21 +24,15 @@
         <!-- MetisMenu CSS -->
         <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+        <!--tab-->
         <!-- Custom CSS -->
         <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
-
-        <!-- DataTables CSS -->
-        <link href="../../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-
-        <!-- DataTables Responsive CSS -->
-        <link href="../../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-
-        <!-- Morris Charts CSS -->
-        <link href="../../vendor/morrisjs/morris.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -59,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="homeuser.jsp"><img src="../../images/logo.png" height="30" width="100" alt="PROMS"></a>
+                    <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" height="30" width="100"></a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -71,7 +65,12 @@
                         <ul class="dropdown-menu dropdown-messages">
                             <li>
                                 <a href="#">
-
+                                    <div>
+                                        <strong>John Smith</strong>
+                                        <span class="pull-right text-muted">
+                                            <em>Yesterday</em>
+                                        </span>
+                                    </div>
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                                 </a>
                             </li>
@@ -202,15 +201,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
+                            
                             <li class="divider"></li>
                             <li>
                                 <a href="#">
@@ -229,15 +220,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
+                           
                             <li class="divider"></li>
                             <li>
                                 <a class="text-center" href="#">
@@ -254,12 +237,12 @@
                             <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            <li><a href="profile.jsp"><i class="fa fa-user fa-fw"></i> User Profile</a>
                             </li>
                             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="login.jsp"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                         <!-- /.dropdown-user -->
@@ -283,63 +266,22 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="flot.jsp">Flot Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="morris.jsp">Morris.js Charts</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                                <a href="homeuser.jsp"><i class="fa fa-th-list fa-fw"></i>Project List</a>
                             </li>
-                            <li>
-                                <a href="tables.jsp"><i class="fa fa-table fa-fw"></i> Tables</a>
-                            </li>
-                            <li>
-                                <a href="forms.jsp"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="panels-wells.jsp">Panels and Wells</a>
-                                    </li>
-                                    <li>
-                                        <a href="buttons.jsp">Buttons</a>
-                                    </li>
-                                    <li>
-                                        <a href="notifications.jsp">Notifications</a>
-                                    </li>
-                                    <li>
-                                        <a href="typography.jsp">Typography</a>
-                                    </li>
-                                    <li>
-                                        <a href="icons.jsp"> Icons</a>
-                                    </li>
-                                    <li>
-                                        <a href="grid.jsp">Grid</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-
-                            <li>
-                                <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="homeuser.jsp">New Project Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="login.jsp">Login Page</a>
-                                    </li>
-
-                                </ul>
-                                <!-- /.nav-second-level -->
+                       <li>
+                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                                </li>
+                                <li>
+                                   <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
+                                </li>
+                            </ul>
+                                
                             </li>
                         </ul>
                     </div>
@@ -348,112 +290,36 @@
                 <!-- /.navbar-static-side -->
             </nav>
 
+            <!-- Page Content -->
             <div id="page-wrapper">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Dashboard</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">Profile</h1>
+                        </div>
+                        <!-- /.col-lg-12 -->
                     </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">6</div>
-                                        <div>Projects!</div>
-                                    </div>
-                                </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="well well-lg">
+                                
                             </div>
-                            <a href="project.jsp">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-check fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">26</div>
-                                        <div>Complete!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div><div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-clock-o fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">26</div>
-                                        <div>Ongoing!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-times fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">13</div>
-                                        <div>Overdue!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
-                
-                <!-- /.row -->
+                <!-- /.container-fluid -->
             </div>
             <!-- /#page-wrapper -->
+            <!-- Tab links -->
 
         </div>
+
         <!-- /#wrapper -->
 
+        <!--Tab -->
+        <script src="../../vendor/bootstrap/js/tab.js"></script>
         <!-- jQuery -->
         <script src="../../vendor/jquery/jquery.min.js"></script>
 
@@ -463,27 +329,8 @@
         <!-- Metis Menu Plugin JavaScript -->
         <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
 
-        <!-- Morris Charts JavaScript -->
-        <script src="../../vendor/raphael/raphael.min.js"></script>
-        <script src="../../vendor/morrisjs/morris.min.js"></script>
-        <script src="../../data/morris-data.js"></script>
-
-        <!-- DataTables JavaScript -->
-        <script src="../../vendor/datatables/js/jquery.dataTables.min.js"></script>
-        <script src="../../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-        <script src="../../vendor/datatables-responsive/dataTables.responsive.js"></script>
-
         <!-- Custom Theme JavaScript -->
         <script src="../../dist/js/sb-admin-2.js"></script>
-
-        <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-        <script>
-            $(document).ready(function () {
-                $('#dataTables-example').DataTable({
-                    responsive: true
-                });
-            });
-        </script>
 
     </body>
 

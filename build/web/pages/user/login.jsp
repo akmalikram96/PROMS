@@ -49,7 +49,12 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
+                <h2 class="text-center">PROJECTS MANAGEMENT SYSTEM</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <!--<div class="login-panel panel panel-default">--> 
                     <div class="panel-heading">
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
@@ -68,13 +73,13 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="homeuser.jsp" class="btn btn-lg btn-success btn-block">Login</a>
+                                <a href="dashboarduser.jsp" class="btn btn-lg btn-success btn-block">Login</a>
                                 <br>
                                 <p><a href="index.html">Forgot Password</a></p>
                             </fieldset> 
                         </form>
                     </div>
-                </div>
+<!--                </div>-->
             </div>
         </div>
     </div>
