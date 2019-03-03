@@ -12,8 +12,9 @@ import java.io.Serializable;
  */
 public class User implements Serializable{
     
-    private String username, password;
-    private int usertype;
+    private String username, email, password,fullname,phoneNo;
+    private int usertype,bookingID;
+
     /**
      * @return the username
      */
@@ -29,6 +30,20 @@ public class User implements Serializable{
     }
 
     /**
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /**
      * @return the password
      */
     public String getPassword() {
@@ -40,8 +55,9 @@ public class User implements Serializable{
      */
     public void setPassword(String password) {
         this.password = password;
-    }   
-     /**
+    }
+
+    /**
      * @return the usertype
      */
     public int getUsertype() {
@@ -54,5 +70,54 @@ public class User implements Serializable{
     public void setUsertype(int usertype) {
         this.usertype = usertype;
     }
+
+    /**
+     * @return the fullname
+     */
+    public String getFullname() {
+        return fullname;
+    }
+
+    /**
+     * @param fullname the fullname to set
+     */
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    /**
+     * @return the phoneNo
+     */
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    /**
+     * @param phoneNo the phoneNo to set
+     */
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
+    }
+
+    /**
+     * @return the bookingID
+     */
+    public int getBookingID() {
+        return bookingID;
+    }
+
+    /**
+     * @param bookingID the bookingID to set
+     */
+    public void setBookingID(int bookingID) {
+        this.bookingID = bookingID;
+    }
+
+    /**
+     * @return the bookingId
+     */
     
-  }
+    
+    
+    
+}

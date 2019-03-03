@@ -6,7 +6,6 @@
 package User;
 
 import Bean.User;
-import JDBC.JDBCUtility;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -19,33 +18,35 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import jdbc.JDBCUtility;
 
 /**
  *
- * @author Akmal Ikram
+ * @author Lumen
  */
 @WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
-
+    
     private JDBCUtility jdbcUtility;
     private Connection con;
-
-    public void init() throws ServletException {
+    
+    public void init() throws ServletException
+    {
         String driver = "com.mysql.jdbc.Driver";
 
-        String dbName = "proms";
+        String dbName = "futsal";
         String url = "jdbc:mysql://localhost/" + dbName + "?";
         String userName = "root";
         String password = "";
 
         jdbcUtility = new JDBCUtility(driver,
-                url,
-                userName,
-                password);
+                                      url,
+                                      userName,
+                                      password);
 
-        jdbcUtility.jdbcConnect();
+       jdbcUtility.jdbcConnect();
         con = jdbcUtility.jdbcGetConnection();
-    }
+    } 
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -60,47 +61,63 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
+        
             User user = null;
-
-            //Get the session object
-            HttpSession session = request.getSession();
-
-            String username = request.getParameter("username");
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            String fullname = request.getParameter("fullname");
-            String phoneNo = request.getParameter("phoneNo");
-            int usertype = 99;
-
-            String sqlQuery = "SELECT * FROM user WHERE username = ? AND password = ?";
-
-            try {
-                PreparedStatement preparedStatement = con.prepareStatement(sqlQuery);
-                preparedStatement.setString(1, username);
-                preparedStatement.setString(2, password);
-
-                ResultSet rs = preparedStatement.executeQuery();
-
-                if (rs.next()) {
-                    usertype = rs.getInt("usertype");
-                    username = rs.getString("username");
-                    password = rs.getString("password");
-
-                    user = new User();
-                    user.setUsertype(usertype);
-                    user.setUsername(username);
-                    user.setPassword(password);
-                    session.setAttribute("memberprofile", user);
-
-                } else {
-                    response.sendRedirect(request.getContextPath() + "/pages/user/login.jsp");
+        
+        //Get the session object
+	HttpSession session = request.getSession();
+        
+        String username = request.getParameter("username");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        String fullname = request.getParameter("fullname");
+        String phoneNo = request.getParameter("phoneNo");
+        int usertype = 99;
+        
+        String sqlQuery = "select * from user where username = ? and password = ?";
+        
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement(sqlQuery);
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, password);
+            
+            ResultSet rs = preparedStatement.executeQuery();
+            
+            if (rs.next()){
+                usertype = rs.getInt("usertype");
+                username = rs.getString("username");
+                password = rs.getString("password");
+                fullname = rs.getString("fullname");
+                email = rs.getString("email");
+                phoneNo = rs.getString("phoneNo");
+                
+                user = new User();
+                user.setUsername(username);
+                user.setPassword(password);
+                user.setUsertype(usertype);
+                user.setFullname(fullname);
+                user.setPhoneNo(phoneNo);
+                user.setEmail(email);
+                session.setAttribute("memberprofile", user);
+               // user.setImage(image);
+                if (usertype == 0 ) {
+                    
+                    response.sendRedirect(request.getContextPath() + "/dashboarduser.jsp");
                 }
-            } catch (SQLException ex) {
-                out.println(ex);
+                else {
+                    response.sendRedirect(request.getContextPath() + "/homeadmin.jsp");
+                }            
+                
+            }else{
+               response.sendRedirect(request.getContextPath() + "/login.jsp");
             }
-
         }
+        catch (SQLException ex) {
+            out.println(ex);
+        }
+        
+        
+    }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
