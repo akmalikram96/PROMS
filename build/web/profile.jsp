@@ -242,7 +242,7 @@
                             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <li><a href="logout.jsp"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                         <!-- /.dropdown-user -->
@@ -303,13 +303,17 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="well well-lg">
-                                <p>Photo</p>
-                                <p>First Name:</p>
-                                <p>Last Name:</p>
-                                <p>Username:</p>
-                                <p>Date Of Birth:</p>
-                                <p>Address:</p>
-                                
+                                <form method="post" action="#">
+                                    <label for="Name">Name: </label>
+                                    <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getFullname()}" placeholder="Full Name" disabled></p>
+                                    <p><label for="Username">Username: </label>
+                                    <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getUsername()}" placeholder="Username" disabled></p>
+                                    <p><label for="Username">Phone  </label>
+                                    <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getPhoneNo()}" placeholder="Username" disabled></p>
+                                    <p><label for="Username">Email: </label>
+                                    <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getEmail()}" placeholder="Username" disabled></p>
+                                    <input  <button type="button" class="btn btn-primary">Primary</button>
+                                </form>
                             </div>
                         </div>
                        
