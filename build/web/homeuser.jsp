@@ -59,7 +59,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="homeuser.jsp"><img src="images/logo.png" height="30" width="100" alt="PROMS"></a>
+                    <a class="navbar-brand" href="dashboarduser.jsp"><img src="images/logo.png" height="30" width="100" alt="PROMS"></a>
                 </div>
                 <!-- /.navbar-header -->
 

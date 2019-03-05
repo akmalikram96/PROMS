@@ -19,25 +19,25 @@
         <title>Project Management System</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- MetisMenu CSS -->
-        <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+        <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
+        <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 
         <!-- DataTables CSS -->
-        <link href="../../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+        <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
         <!-- DataTables Responsive CSS -->
-        <link href="../../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+        <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
         <!-- Morris Charts CSS -->
-        <link href="../../vendor/morrisjs/morris.css" rel="stylesheet">
+        <link href="vendor/morrisjs/morris.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
-        <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -59,7 +59,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="homeuser.jsp"><img src="../../images/logo.png" height="30" width="100" alt="PROMS"></a>
+                    <a class="navbar-brand" href="dashboaradmin.jsp"><img src="images/logo.png" height="30" width="100" alt="PROMS"></a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -254,7 +254,7 @@
                             <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            <li><a href="profile.jsp"><i class="fa fa-user fa-fw"></i> User Profile</a>
                             </li>
                             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
@@ -283,13 +283,10 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                            <a href="dashboarduser.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
+                            <a href="dashboardadmin.jsp"><i class="fa fa-home fa-fw"></i>Home</a>
                             </li>
                             <li>
-                                <a href="homeuser.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects</a>
-                            </li>
-                            <li>
-                                <a href="createproject.jsp"><i class="fa fa-files-o fa-fw"></i>Create projects</a>
+                                <a href="homeadmin.jsp"><i class="fa fa-dashboard fa-fw"></i>Projects</a>
                             </li>
                             <li>
                             <a href="tenderlist.jsp"><i class="fa fa-th-list fa-fw"></i>Tender List</a>
@@ -309,11 +306,7 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
-                <div class="row">
-                    <div class="col-sm-2">
-                        <button type="button" class="btn btn-default"><a href="createproject.jsp" class="center">Add new project</a></butto>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
@@ -425,26 +418,26 @@
         <!-- /#wrapper -->
 
         <!-- jQuery -->
-        <script src="../../vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Metis Menu Plugin JavaScript -->
-        <script src="../../vendor/metisMenu/metisMenu.min.js"></script>
+        <script src="vendor/metisMenu/metisMenu.min.js"></script>
 
         <!-- Morris Charts JavaScript -->
-        <script src="../../vendor/raphael/raphael.min.js"></script>
-        <script src="../../vendor/morrisjs/morris.min.js"></script>
-        <script src="../../data/morris-data.js"></script>
+        <script src="vendor/raphael/raphael.min.js"></script>
+        <script src="vendor/morrisjs/morris.min.js"></script>
+        <script src="data/morris-data.js"></script>
 
         <!-- DataTables JavaScript -->
-        <script src="../../vendor/datatables/js/jquery.dataTables.min.js"></script>
-        <script src="../../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-        <script src="../../vendor/datatables-responsive/dataTables.responsive.js"></script>
+        <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+        <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
 
         <!-- Custom Theme JavaScript -->
-        <script src="../../dist/js/sb-admin-2.js"></script>
+        <script src="dist/js/sb-admin-2.js"></script>
 
         <!-- Page-Level Demo Scripts - Tables - Use for reference -->
         <script>

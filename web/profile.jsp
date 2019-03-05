@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="30" width="100"></a>
+                    <a class="navbar-brand" href="dashboarduser.jsp"><img src="images/logo.png" height="30" width="100"></a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -303,7 +303,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="well well-lg">
-                                <form method="post" action="#">
+                                <form method="post" action="editprofile.jsp">
                                     <label for="Name">Name: </label>
                                     <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getFullname()}" placeholder="Full Name" disabled></p>
                                     <p><label for="Username">Username: </label>
@@ -312,7 +312,7 @@
                                     <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getPhoneNo()}" placeholder="Username" disabled></p>
                                     <p><label for="Username">Email: </label>
                                     <p><input class="form-control" id="disabledInput" type="text" value="${sessionScope.memberprofile.getEmail()}" placeholder="Username" disabled></p>
-                                    <input  <button type="button" class="btn btn-primary">Primary</button>
+                                    <input type="submit" class="btn btn-primary" value="Edit Profile">
                                 </form>
                             </div>
                         </div>
