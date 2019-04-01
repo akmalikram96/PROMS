@@ -59,7 +59,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="    images/logo.png" height="30" width="100"></a>
+                    <a class="navbar-brand" href="dashboarduser.jsp"><img src="    images/logo.png" height="30" width="100"></a>
                 </div>
                 <!-- /.navbar-header -->
 
